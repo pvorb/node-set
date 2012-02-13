@@ -5,13 +5,13 @@ string sets for javascript
 ## Installation
 
 ```
-npm install set
+npm install Set
 ```
 
 ## Usage
 
 ```js
-var Set = require('set');
+var Set = require('Set');
 
 var alpha = new Set([ 'a', 'b', 'c' ]);
 
