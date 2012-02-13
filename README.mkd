@@ -86,28 +86,3 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-var Set = require('./set.js');
-
-var alpha = new Set([ 'a', 'b', 'c' ]);
-
-console.log(alpha.size());
-
-console.log(alpha.toString());
-
-alpha.add('d');
-
-console.log(alpha.toString());
-
-alpha.add('e', 'f', 'g');
-
-console.log(alpha.toString());
-
-alpha.remove('f', 'b');
-
-console.log(alpha.toString());
-
-console.log(alpha.size());
-
-console.log(alpha.contains('a'));
-
-console.log(alpha.contains('f'));
