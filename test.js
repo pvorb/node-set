@@ -23,3 +23,5 @@ console.log(alpha.size());
 console.log(alpha.contains('a'));
 
 console.log(alpha.contains('f'));
+
+console.log(alpha.toArray());
