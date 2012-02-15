@@ -2,8 +2,11 @@
   "name": "Set",
   "description": "sets in javascript",
   "author": "Paul Vorbach <paul@vorb.de> (http://vorb.de/)",
-  "tags": [ "set", "collection" ],
-  "version": "0.0.0",
+  "tags": [
+    "set",
+    "collection"
+  ],
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/pvorb/node-set.git"
@@ -20,5 +23,8 @@
       "type": "MIT",
       "url": "http://vorb.de/license/mit.html"
     }
-  ]
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {}
 }
