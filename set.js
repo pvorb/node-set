@@ -16,6 +16,7 @@ function Set(set) {
 Set.prototype.contains = function contains(val) {
   return this.set[val] ? true : false;
 };
+Set.prototype.has = Set.prototype.contains;
 
 Set.prototype.add = function add(val) {
   if (arguments.length == 1)
@@ -40,6 +41,7 @@ Set.prototype.remove = function remove(val) {
     for (var i = 0; i < arguments.length; i++)
       delete this.set[arguments[i]];
 };
+Set.prototype.delete = Set.prototype.remove;
 
 Set.prototype.clear = function clear() {
   this.set = {};
@@ -56,3 +58,4 @@ Set.prototype.toString = function toString() {
 Set.prototype.toArray = function toArray() {
   return Object.keys(this.set);
 };
+Set.prototype.values = Set.prototype.toArray();

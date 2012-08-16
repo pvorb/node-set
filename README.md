@@ -50,12 +50,14 @@ Add all elements from array to the set.
 
 ```js
 set.remove(val, ...)
+set.delete(val)
 ```
 
 Remove one or more elements from the set.
 
 ```js
 set.contains(val)
+set.has(val)
 ```
 
 Check if the set contains `val`.
@@ -68,6 +70,7 @@ Returns the size of the set.
 
 ```js
 set.toArray()
+set.values()
 ```
 
 Returns the elements of the set as an Array.
