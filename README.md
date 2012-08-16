@@ -61,6 +61,12 @@ set.size()
 Returns the size of the set.
 
 ```js
+set.toArray()
+```
+
+Returns the elements of the set as an Array.
+
+```js
 set.toString()
 ```
 
