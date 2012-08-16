@@ -4,8 +4,16 @@ string sets for javascript
 
 ## Installation
 
+For the server:
+
 ```
 npm install Set
+```
+
+For the browser:
+
+```
+ender build Set
 ```
 
 ## Usage
