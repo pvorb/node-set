@@ -25,6 +25,14 @@ Set.prototype.add = function add(val) {
       this.set[arguments[i]] = true;
 };
 
+Set.prototype.addAll = function addAll(arr) {
+  if (typeof arr != 'object' && !(arr instanceof Array))
+    throw new Error('arr must be an array.');
+
+  for (var i = 0; i < arr.length; i++)
+    this.add(arr[i]);
+}
+
 Set.prototype.remove = function remove(val) {
   if (arguments.length == 1)
     delete this.set[val];

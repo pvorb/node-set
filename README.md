@@ -43,6 +43,12 @@ set.add(val, ...)
 Add one or more elements to the set.
 
 ```js
+set.addAll(array)
+```
+
+Add all elements from array to the set.
+
+```js
 set.remove(val, ...)
 ```
 
