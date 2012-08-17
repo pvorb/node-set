@@ -56,6 +56,9 @@ Set.prototype.toString = function toString() {
 };
 
 Set.prototype.toArray = function toArray() {
+  if (typeof this.set == 'undefined')
+    return [];
+
   return Object.keys(this.set);
 };
-Set.prototype.values = Set.prototype.toArray();
+Set.prototype['*values'] = Set.prototype.toArray;

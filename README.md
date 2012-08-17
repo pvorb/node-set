@@ -2,6 +2,9 @@
 
 string sets for javascript
 
+This library can be used as a shim for [EcmaScript Harmony’s Set
+class](http://wiki.ecmascript.org/doku.php?id=harmony:simple_maps_and_sets#set).
+
 ## Installation
 
 For the server:
@@ -78,7 +81,7 @@ Returns the size of the set.
 
 ```js
 set.toArray()
-set.values()
+set['*values']()
 ```
 
 Returns the elements of the set as an Array.

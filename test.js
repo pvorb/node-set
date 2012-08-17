@@ -25,3 +25,5 @@ console.log(alpha.contains('a'));
 console.log(alpha.contains('f'));
 
 console.log(alpha.toArray());
+
+console.log(alpha['*values']());
