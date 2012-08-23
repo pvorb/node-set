@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/pvorb/node-set.png)](http://travis-ci.org/pvorb/node-set)
 # Set
 
 string sets for javascript
