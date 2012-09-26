@@ -6,7 +6,7 @@
     "set",
     "collection"
   ],
-  "version": "0.3.1",
+  "version": "0.4.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/pvorb/node-set.git"
