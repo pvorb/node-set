@@ -9,19 +9,15 @@ class](http://wiki.ecmascript.org/doku.php?id=harmony:simple_maps_and_sets#set).
 
 For the server:
 
-```
-npm install Set
-```
+    npm install Set
 
 For the browser:
 
-```
-ender build Set
-```
+    ender build Set
 
 ## Usage
 
-```js
+~~~ javascript
 var Set = require('Set');
 
 var alpha = new Set([ 'a', 'b', 'c' ]);
@@ -37,63 +33,75 @@ alpha.remove('a', 'b');
 console.log(alpha.toString());
 
 console.log(alpha.contains('c'));
-```
+~~~
 
 ## API
 
-```js
-Set(obj)
-```
+~~~ javascript
+new Set(obj)
+~~~
 
 Create a set from an array or object.
 
-```js
+~~~ javascript
+new Set(contains)
+~~~
+
+Create a set from a function.
+
+This good for creating infinite sets. `contains` is a function that takes one
+argument and returns `true` if it is in the set and `false` otherwise. It works
+well together with `set.add()` and `set.remove()`, but not with `set.toArray()`
+and `set.toString()`.
+
+~~~ javascript
 set.add(val, ...)
-```
+~~~
 
 Add one or more elements to the set.
 
-```js
+~~~ javascript
 set.addAll(array)
-```
+~~~
 
 Add all elements from array to the set.
 
-```js
+~~~ javascript
 set.remove(val, ...)
 set.delete(val)
-```
+~~~
 
 Remove one or more elements from the set.
 
-```js
+~~~ javascript
 set.contains(val)
 set.has(val)
-```
+~~~
 
 Check if the set contains `val`.
 
-```js
+~~~ javascript
 set.size()
-```
+~~~
 
 Returns the size of the set.
 
-```js
+~~~ javascript
 set.toArray()
 set['*values']()
-```
+~~~
 
 Returns the elements of the set as an Array.
 
-```js
+~~~ javascript
 set.toString()
-```
+~~~
 
 Serialize the set.
 
 ## License
 
+~~~
 Copyright © 2012 Paul Vorbach
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -112,3 +120,4 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+~~~

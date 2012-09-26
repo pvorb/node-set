@@ -1,6 +1,7 @@
 var Set = require('./set.js');
 
 var alpha = new Set([ 'a', 'b', 'c' ]);
+var beta = new Set(function contains(val) { return val > 0; });
 
 console.log(alpha.size());
 

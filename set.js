@@ -2,6 +2,7 @@ module.exports = Set;
 
 function Set(set) {
   this.set = {};
+  this.infContains = function () { return true; };
 
   if (typeof set == 'object') {
     if (set instanceof Array)
@@ -9,12 +10,14 @@ function Set(set) {
         this.set[set[i]] = true;
     else
       this.set = set;
+  } else if (typeof set == 'function') {
+    this.infContains = set;
   } else if (typeof set != 'undefined')
     throw new Error('set must be either an array or an object.');
 }
 
 Set.prototype.contains = function contains(val) {
-  return this.set[val] ? true : false;
+  return this.set[val] ? true : false && this.infContains(val);
 };
 Set.prototype.has = Set.prototype.contains;
 
