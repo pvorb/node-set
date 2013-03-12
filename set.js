@@ -44,7 +44,7 @@ Set.prototype.remove = function remove(val) {
     for (var i = 0; i < arguments.length; i++)
       delete this.set[arguments[i]];
 };
-Set.prototype.delete = Set.prototype.remove;
+Set.prototype['delete'] = Set.prototype.remove;
 
 Set.prototype.clear = function clear() {
   this.set = {};
