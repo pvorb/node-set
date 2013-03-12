@@ -68,7 +68,7 @@ Add all elements from array to the set.
 
 ~~~ javascript
 set.remove(val, ...)
-set.delete(val)
+set.['delete'](val)
 ~~~
 
 Remove one or more elements from the set.
